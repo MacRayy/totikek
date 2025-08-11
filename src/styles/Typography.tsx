@@ -15,7 +15,7 @@ export const H1 = styled.h1<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize['4xl']};
   font-weight: ${theme.fontWeight.bold};
   line-height: ${theme.lineHeight.tight};
-  margin-bottom: ${theme.spacing[6]};
+  margin-bottom: 0;
   color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 
@@ -28,7 +28,7 @@ export const H2 = styled.h2<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize['3xl']};
   font-weight: ${theme.fontWeight.bold};
   line-height: ${theme.lineHeight.tight};
-  margin-bottom: ${theme.spacing[5]};
+  margin-bottom: 0;
   color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 
@@ -41,7 +41,7 @@ export const H3 = styled.h3<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize['2xl']};
   font-weight: ${theme.fontWeight.semibold};
   line-height: ${theme.lineHeight.snug};
-  margin-bottom: ${theme.spacing[4]};
+  margin-bottom: 0;
   color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
@@ -50,7 +50,7 @@ export const H4 = styled.h4<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize.xl};
   font-weight: ${theme.fontWeight.semibold};
   line-height: ${theme.lineHeight.snug};
-  margin-bottom: ${theme.spacing[3]};
+  margin-bottom: 0;
   color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
@@ -59,7 +59,7 @@ export const H5 = styled.h5<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize.lg};
   font-weight: ${theme.fontWeight.medium};
   line-height: ${theme.lineHeight.snug};
-  margin-bottom: ${theme.spacing[3]};
+  margin-bottom: 0;
   color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
@@ -69,7 +69,7 @@ export const Body = styled.p<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize.base};
   font-weight: ${theme.fontWeight.normal};
   line-height: ${theme.lineHeight.relaxed};
-  margin-bottom: ${theme.spacing[4]};
+  margin-bottom: 0;
   color: ${({ color = 'secondary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
@@ -78,7 +78,7 @@ export const BodyLarge = styled.p<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize.lg};
   font-weight: ${theme.fontWeight.normal};
   line-height: ${theme.lineHeight.relaxed};
-  margin-bottom: ${theme.spacing[4]};
+  margin-bottom: 0;
   color: ${({ color = 'secondary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
@@ -87,7 +87,7 @@ export const BodySmall = styled.p<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize.sm};
   font-weight: ${theme.fontWeight.normal};
   line-height: ${theme.lineHeight.normal};
-  margin-bottom: ${theme.spacing[3]};
+  margin-bottom: 0;
   color: ${({ color = 'muted' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
@@ -97,7 +97,7 @@ export const Lead = styled.p<Pick<TypographyProps, 'color' | 'align'>>`
   font-size: ${theme.fontSize.xl};
   font-weight: ${theme.fontWeight.light};
   line-height: ${theme.lineHeight.relaxed};
-  margin-bottom: ${theme.spacing[6]};
+  margin-bottom: 0;
   color: ${({ color = 'secondary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `

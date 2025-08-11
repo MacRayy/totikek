@@ -48,6 +48,7 @@ export const theme = {
       primary: 'var(--color-background-primary)',
       secondary: 'var(--color-background-secondary)',
       muted: 'var(--color-background-muted)',
+      inverse: 'var(--color-background-inverse)',
       dark: 'var(--color-background-dark)',
     },
     border: {

@@ -3,17 +3,17 @@
   --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-family-mono: 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', Consolas, 'Courier New', monospace;
 
-  /* Primary Colors - Based on Tótikék logo blue */
+  /* Primary Colors - Based on Tótikék logo blue #036BB3 */
   --color-primary-50: #e6f3ff;
-  --color-primary-100: #b3d9ff;
-  --color-primary-200: #80bfff;
-  --color-primary-300: #4da6ff;
-  --color-primary-400: #1a8cff;
-  --color-primary-500: #0066cc;
-  --color-primary-600: #0052a3;
-  --color-primary-700: #003d7a;
-  --color-primary-800: #002952;
-  --color-primary-900: #001429;
+  --color-primary-100: #b8e0ff;
+  --color-primary-200: #7fc9ff;
+  --color-primary-300: #47b1ff;
+  --color-primary-400: #1a91e6;
+  --color-primary-500: #036bb3;
+  --color-primary-600: #025999;
+  --color-primary-700: #024580;
+  --color-primary-800: #013366;
+  --color-primary-900: #01204d;
 
   /* Neutral Colors */
   --color-neutral-50: #f8fafc;
@@ -33,12 +33,12 @@
   --color-light-cream: #fafafa;
   --color-light-mist: #f7f8fa;
 
-  /* Accent Colors */
-  --color-accent-orange: #ff6b35;
-  --color-accent-teal: #0ea5e9;
-  --color-accent-success: #22c55e;
-  --color-accent-warning: #f59e0b;
-  --color-accent-error: #ef4444;
+  /* Accent Colors - Updated to complement #036BB3 */
+  --color-accent-orange: #ff7425;
+  --color-accent-teal: #0891b2;
+  --color-accent-success: #059669;
+  --color-accent-warning: #d97706;
+  --color-accent-error: #dc2626;
 
   /* Semantic Colors */
   --color-text-primary: var(--color-neutral-900);
@@ -49,6 +49,7 @@
   --color-background-primary: var(--color-light-pure);
   --color-background-secondary: var(--color-neutral-50);
   --color-background-muted: var(--color-neutral-100);
+  --color-background-inverse: var(--color-primary-500);
   --color-background-dark: var(--color-neutral-900);
 
   --color-border-light: var(--color-neutral-200);
@@ -61,11 +62,11 @@
   --gradient-mountain: linear-gradient(180deg, var(--color-light-pure) 0%, var(--color-neutral-50) 50%, var(--color-primary-500) 100%);
   --gradient-sky: linear-gradient(180deg, var(--color-primary-50) 0%, var(--color-primary-500) 100%);
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 102, 204, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 102, 204, 0.1), 0 2px 4px -1px rgba(0, 102, 204, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 102, 204, 0.1), 0 4px 6px -2px rgba(0, 102, 204, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 102, 204, 0.1), 0 10px 10px -5px rgba(0, 102, 204, 0.04);
+  /* Shadows with updated primary color tint */
+  --shadow-sm: 0 1px 2px 0 rgba(3, 107, 179, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(3, 107, 179, 0.1), 0 2px 4px -1px rgba(3, 107, 179, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(3, 107, 179, 0.1), 0 4px 6px -2px rgba(3, 107, 179, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(3, 107, 179, 0.1), 0 10px 10px -5px rgba(3, 107, 179, 0.04);
 
   /* Spacing Scale */
   --spacing-1: 0.25rem; /* 4px */
@@ -145,7 +146,7 @@
 }
 
 html {
-  font-family: var(--font-family-sans), sans-serif;
+  font-family: var(--font-family-sans) sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -183,4 +184,14 @@ textarea:focus-visible,
 select:focus-visible {
   outline: 2px solid var(--color-primary-500);
   outline-offset: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary-500);
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary-600);
 }
