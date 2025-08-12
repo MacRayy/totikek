@@ -9,6 +9,8 @@ const containerStyles = css({
   padding: '1rem',
   width: '100%',
   flexDirection: 'column',
+  maxWidth: '75vw',
+  textAlign: 'center',
 })
 
 export const Container = styled.header(containerStyles)
