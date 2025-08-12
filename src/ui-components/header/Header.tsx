@@ -17,7 +17,7 @@ export const Header = () => {
             color: theme.colors.text.inverse,
           }}
         >
-          Totikék
+          Tótikék
         </H1>
       </Link>
     </Styled.Header>

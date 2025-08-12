@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7495e1a0-ca8a-4b8b-acf1-2057b4635626" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ui-components/header/Header.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui-components/header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-components/empty-page/EmptyPage.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-components/empty-page/EmptyPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/PNG image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fulop.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Typography.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/header/Header.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/header/Header.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/header/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,7 @@
       <workItem from="1754669588448" duration="618000" />
       <workItem from="1754670216430" duration="46000" />
       <workItem from="1754670309266" duration="4499000" />
-      <workItem from="1754926184327" duration="4733000" />
+      <workItem from="1754926184327" duration="7334000" />
     </task>
     <servers />
   </component>
