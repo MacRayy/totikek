@@ -7,7 +7,8 @@ export default function Home() {
       <EmptyPage>
         <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
           <p>
-            Ez az oldal a Tótikék tanösvény weboldala, ahol mesék és kiegésítő tartalmak olvashotók.
+            Ez az oldal a Tótikék tanösvény weboldala, ahol mesék és kiegészítő tartalmak
+            olvashatók.
           </p>
           <p>A fejlesztés alatt álló oldalon hamarosan elérhető lesz a teljes élmény.</p>
         </div>

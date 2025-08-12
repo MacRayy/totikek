@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7495e1a0-ca8a-4b8b-acf1-2057b4635626" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/banyaszat/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/kaptalantoti/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/madarvilag/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/novenyvilag/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/szolo/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/viz-utja/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about-us/AboutUs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/birdlife/Birdlife.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/history/History.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/mining/Mining.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/plants/Plants.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/water/Water.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/wine/Wine.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui-components/page/Page.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui-components/page/Page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-components/empty-page/EmptyPage.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/empty-page/EmptyPage.styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +103,7 @@
       <workItem from="1754669588448" duration="618000" />
       <workItem from="1754670216430" duration="46000" />
       <workItem from="1754670309266" duration="4499000" />
-      <workItem from="1754926184327" duration="11377000" />
+      <workItem from="1754926184327" duration="12675000" />
     </task>
     <servers />
   </component>
