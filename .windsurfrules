@@ -1,0 +1,14 @@
+Coding conventions: 
+- Follow ESLint and Prettier rules when writing code (available in the repo)
+
+- use `is | are | has | have | should | can` prefixes for Boolean values
+- Optimise for mobile usage, mobile-first approach, keep it responsive
+- Don't import React and use destructuring for importing elements from React. e.g. import { ReactElement } from 'react'
+- Use yarn instead of npm.
+- Try to avoid any type; use TSFixMe type if necessary 
+- Add new routes to the AppRoutes file
+- Use supabase function instead of direct inserts, deletes and updates
+- Use type definitions over interface
+- Run `yarn lint:fix` before every commit
+- Avoid mutation, follow functional programing principles
+- use flex and grid for layout instead of margins
