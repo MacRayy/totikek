@@ -34,15 +34,15 @@ const eslintConfig = [
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
-      parser: typescriptParser,
-      parserOptions: {
-        project: "./tsconfig.json",
-        tsconfigRootDir: "./",
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
+    parser: typescriptParser,
+    parserOptions: {
+      project: "./tsconfig.json",
+      tsconfigRootDir: __dirname,  // Changed from "./" to __dirname
+      sourceType: "module",
+      ecmaFeatures: {
+        jsx: true,
       },
+    },
       globals: {
         __dirname: "readonly",
         console: "readonly",

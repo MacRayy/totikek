@@ -2,6 +2,7 @@
 
 import type { PropsWithChildren } from 'react'
 import { Header } from '@/ui-components/header/Header'
+import { Footer } from '@/ui-components/footer/Footer'
 import * as Styled from './Page.styles'
 
 export const Page = ({ children }: PropsWithChildren) => {
@@ -9,7 +10,7 @@ export const Page = ({ children }: PropsWithChildren) => {
     <Styled.Page className="page">
       <Header />
       <main>{children}</main>
-      <footer />
+      <Footer />
     </Styled.Page>
   )
 }

@@ -16,8 +16,6 @@ const pageStyles = css({
   },
 
   ['@media (max-width: 600px)']: {
-    paddingBottom: '80px',
-
     ['main']: {
       alignItems: 'center',
     },

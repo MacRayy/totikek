@@ -1,19 +1,29 @@
-import { EmptyPage } from '@/ui-components/empty-page/EmptyPage'
-import { Page } from '@/ui-components/page/Page'
+import type { Metadata } from 'next'
+import { Home } from '@/components/home/Home'
 
-export default function Home() {
-  return (
-    <Page>
-      <EmptyPage>
-        <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-          <p>
-            Ez az oldal a Tótikék tanösvény weboldala, ahol mesék és kiegészítő tartalmak
-            olvashatók.
-          </p>
-          <p>A fejlesztés alatt álló oldalon hamarosan elérhető lesz a teljes élmény.</p>
-        </div>
-      </EmptyPage>
-      <footer />
-    </Page>
-  )
+export const metadata: Metadata = {
+  title: 'Kezdőlap',
+  description:
+    'Üdvözlünk a Tóti-hegyen! A Tótikék tanösvény 6,3 km-es útvonal Káptalantótiban – történelem, természet és kulturális örökség.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Tótikék – Kezdőlap',
+    description:
+      '6,3 km-es tanösvény a Tóti-hegyen – fedezd fel Káptalantóti történelmét, természetét és kulturális örökségét.',
+    url: '/',
+    images: [
+      {
+        url: '/totikek-logo-blue.png',
+        width: 512,
+        height: 512,
+        alt: 'Tótikék logó',
+      },
+    ],
+  },
+}
+
+export default function HomePage() {
+  return <Home />
 }

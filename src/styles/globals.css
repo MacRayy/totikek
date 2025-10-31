@@ -11,8 +11,8 @@
   --color-primary-400: #1a91e6;
   --color-primary-500: #036bb3;
   --color-primary-600: #025999;
-  --color-primary-700: #024580;
-  --color-primary-800: #013366;
+  --color-primary-700: #023d73; 
+  --color-primary-800: #172f6e; 
   --color-primary-900: #01204d;
 
   /* Neutral Colors */
@@ -41,7 +41,7 @@
   --color-accent-error: #dc2626;
 
   /* Semantic Colors */
-  --color-text-primary: var(--color-neutral-900);
+  --color-text-primary: var(--color-primary-800);
   --color-text-secondary: var(--color-neutral-600);
   --color-text-muted: var(--color-neutral-500);
   --color-text-inverse: var(--color-light-pure);
