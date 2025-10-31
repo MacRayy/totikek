@@ -1,5 +1,4 @@
 import * as Styled from './Footer.styles'
-import { Copyright } from './Footer.styles'
 
 export const Footer = () => {
   return (
