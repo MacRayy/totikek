@@ -135,6 +135,16 @@ export const Home = () => {
           települési utcákon, mezei utakon, erdei ösvényeken.
         </Body>
 
+        <Styled.MapWrap>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.221928337612!2d17.483!3d46.825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769a7f2a1b9c2f1%3A0x0000000000000000!2sKáptalantóti!5e0!3m2!1shu!2shu!4v1700000000000"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+            title="Káptalantóti térkép"
+          />
+        </Styled.MapWrap>
+
         <H2>Tótikék kisokos</H2>
         <Styled.InfoGrid>
           <Styled.Card>

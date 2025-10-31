@@ -50,8 +50,22 @@ const iconWrapStyles = css({
   color: theme.colors.text.primary,
 })
 
+const mapWrapStyles = css({
+  width: '100%',
+  aspectRatio: '16 / 9',
+  borderRadius: theme.borderRadius.md,
+  overflow: 'hidden',
+  ['& iframe']: {
+    width: '100%',
+    height: '100%',
+    border: 0,
+    display: 'block',
+  },
+})
+
 export const Section = styled.section(sectionStyles)
 export const StationsGrid = styled.ul(stationsGridStyles)
 export const InfoGrid = styled.div(infoGridStyles)
 export const Card = styled.div(cardStyles)
 export const IconWrap = styled.div(iconWrapStyles)
+export const MapWrap = styled.div(mapWrapStyles)
