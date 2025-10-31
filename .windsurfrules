@@ -12,3 +12,6 @@ Coding conventions:
 - Run `yarn lint:fix` before every commit
 - Avoid mutation, follow functional programing principles
 - use flex and grid for layout instead of margins
+- keep the stlyed in a separate file (Component.styles.ts) and import it as import * as Styled
+- deinfe styles and then the styled component
+- use values from theme

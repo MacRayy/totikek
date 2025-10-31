@@ -70,7 +70,7 @@ export const Body = styled.p<Pick<TypographyProps, 'color' | 'align'>>`
   font-weight: ${theme.fontWeight.normal};
   line-height: ${theme.lineHeight.relaxed};
   margin-bottom: 0;
-  color: ${({ color = 'secondary' }) => theme.colors.text[color]};
+  color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
 
@@ -79,7 +79,7 @@ export const BodyLarge = styled.p<Pick<TypographyProps, 'color' | 'align'>>`
   font-weight: ${theme.fontWeight.normal};
   line-height: ${theme.lineHeight.relaxed};
   margin-bottom: 0;
-  color: ${({ color = 'secondary' }) => theme.colors.text[color]};
+  color: ${({ color = 'primary' }) => theme.colors.text[color]};
   text-align: ${({ align = 'left' }) => align};
 `
 
