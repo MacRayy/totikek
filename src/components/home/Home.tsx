@@ -89,8 +89,8 @@ export const Home = () => {
         <Body>
           A Tótikék tanösvény egy 6,3 km hosszú kirándulási útvonal Káptalantótiban, amely bemutatja
           a település gazdag történelmét, természeti értékeit és kulturális örökségét. A túra kb. 3
-          óra alatt teljesíthető kényelmes tempóban. Az útvonalat kék madártollak jelölik - kövesd
-          ezeket a jelzéseket!
+          óra alatt teljesíthető kényelmes tempóban. A szintemelkedés 198 m fel és le. Az útvonalat
+          kék madártollak jelölik - kövesd ezeket a jelzéseket!
         </Body>
 
         <Image src="/fulop.png" alt="Fülöp a füleskuvik" width={350} height={350} />
@@ -134,6 +134,17 @@ export const Home = () => {
           van a templom közelében és a falu több pontján. Az útvonal változatos terepen halad:
           települési utcákon, mezei utakon, erdei ösvényeken.
         </Body>
+
+        <Styled.MapImageWrap>
+          <Image
+            src="/map.png"
+            alt="Tótikék tanösvény térképe"
+            width={1200}
+            height={800}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </Styled.MapImageWrap>
 
         <Styled.MapWrap>
           <iframe

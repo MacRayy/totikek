@@ -53,12 +53,28 @@ const iconWrapStyles = css({
 const mapWrapStyles = css({
   width: '100%',
   aspectRatio: '16 / 9',
+  border: `1px solid ${theme.colors.border.light}`,
   borderRadius: theme.borderRadius.md,
   overflow: 'hidden',
+  boxShadow: theme.shadow.sm,
   ['& iframe']: {
     width: '100%',
     height: '100%',
     border: 0,
+    display: 'block',
+  },
+})
+
+const mapImageWrapStyles = css({
+  width: '100%',
+  border: `1px solid ${theme.colors.border.light}`,
+  borderRadius: theme.borderRadius.md,
+  overflow: 'hidden',
+  boxShadow: theme.shadow.sm,
+  backgroundColor: theme.colors.background.secondary,
+  ['& img']: {
+    width: '100%',
+    height: 'auto',
     display: 'block',
   },
 })
@@ -69,3 +85,4 @@ export const InfoGrid = styled.div(infoGridStyles)
 export const Card = styled.div(cardStyles)
 export const IconWrap = styled.div(iconWrapStyles)
 export const MapWrap = styled.div(mapWrapStyles)
+export const MapImageWrap = styled.div(mapImageWrapStyles)
