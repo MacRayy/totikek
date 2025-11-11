@@ -5,7 +5,7 @@ import * as Styled from './Water.styles'
 export const Water = () => {
   return (
     <Styled.Section>
-      <H1 align="center">A víz útja</H1>
+      <H1 align="center">A víz útja Káptalantótiban</H1>
       <Styled.Article>
         <H2>2. fejezet – Fülöp és a víz vándorútja</H2>
         <Body>
@@ -33,10 +33,10 @@ export const Water = () => {
           vizes élőhelyek. A múlt században sok lápot, nedves rétet lecsapoltak, és így a víz már
           nem tudott ott maradni, ahol régen összegyűlt.
         </Body>
+        <Body>A patak felé mutatott, amely csendesen csillogott a túloldalon.</Body>
         <Body>
-          A patak felé mutatott, amely csendesen csillogott a túloldalon. – Ha ügyesen bánunk vele,
-          a víz segít megőrizni a talajt és az élőhelyeket. Csak okosan kell visszatartani –
-          csipogta.
+          – Ha ügyesen bánunk vele, a víz segít megőrizni a talajt és az élőhelyeket. Csak okosan
+          kell visszatartani – csipogta.
         </Body>
         <Body>– És azt hogyan lehet? – kérdeztem.</Body>
         <Body>
@@ -62,10 +62,10 @@ export const Water = () => {
           tollpihe lelibbent rólam a földre. – Nézd csak! – nevetett fel Szilárd. – Hullajtod a kék
           útjelzőidet.
         </Body>
+        <Body>Meglepetten néztem le a kis tollakra, amelyek lassan a patak felé sodródtak.</Body>
         <Body>
-          Meglepetten néztem le a kis tollakra, amelyek lassan a patak felé sodródtak. – Akkor
-          legyen ez így – mondtam mosolyogva. – Aki tovább szeretné hallani a történetemet, kövesse
-          a kék madártollakat! Azok mutatják az utat a következő meséhez.
+          – Akkor legyen ez így – mondtam mosolyogva. – Aki tovább szeretné hallani a történetemet,
+          kövesse a kék madártollakat! Azok mutatják az utat a következő meséhez.
         </Body>
         <Body>
           Ahogy elindultam tovább, a tollak mögöttem suhantak, mintha ők is tudták volna, merre kell

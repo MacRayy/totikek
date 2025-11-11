@@ -15,20 +15,27 @@ export const History = () => {
           hajlanak a tér fölé. Amikor itt ülök az ágakon, mintha a múlt mesélne nekem.
         </Body>
         <Body>
-          Éppen egy ilyen estén motozást hallottam odalent, a vadgesztenyék gyökerei között. – Félre
-          minden tüskés kupacs! Megérkeztem! – dörmögte jókedvűen Borz Bendegúz, aki mindig úgy tűnt
-          fel, mintha a falu összes levele ráragadt volna.
+          Éppen egy ilyen estén motozást hallottam odalent, a vadgesztenyék gyökerei között.
         </Body>
         <Body>
-          – Szervusz, Bendegúz! – köszöntöttem. – Úgy látom, megint történelemkutatáson vagy. – Hát
-          hogyne lennék! – pöfögte büszkén. – Képzeld, a falut már 1256-ban „Tothy” néven
-          említették, és akkor még egészen másként nézett ki a környék. Később a győri káptalan is
-          birtokolt itt földeket, így került a név elé a „Káptalan”.
+          – Félre minden tüskés kupacs! Megérkeztem! – dörmögte jókedvűen Borz Bendegúz, aki mindig
+          úgy tűnt úgy tűnt fel, mintha a falu összes levele ráragadt volna.
+        </Body>
+        <Body>
+          – Szervusz, Bendegúz! – köszöntöttem. – Úgy látom, megint történelemkutatáson vagy.
+        </Body>
+        <Body>
+          – Hát – Hát hogyne lennék! – pöfögte büszkén. – Képzeld, a falut már 1256-ban „Tothy”
+          néven említették, és akkor még egészen másként nézett ki a környék. Később a győri
+          káptalan is birtokolt itt földeket, így került a név elé a „Káptalan”.
         </Body>
         <Body>
           Lent a téren nesztelenül libbent végig a szél. A templom falai tompán visszhangozták
-          Bendegúz hangját. – Régen két Tóti volt – tettem hozzá. – Alsótóti és Felsőtóti. – Bizony
-          – bólogatott a borz. – A két település csak 1848-ban egyesült, abból lett a mai
+          Bendegúz hangját.
+        </Body>
+        <Body>– Régen két Tóti volt – tettem hozzá. – Alsótóti és Felsőtóti.</Body>
+        <Body>
+          – Bizony – bólogatott a borz. – A két település csak 1848-ban egyesült, abból lett a mai
           Káptalantóti. Nekem tetszik ez a történet… olyan, mintha két falu összefogott volna, hogy
           erősebbek legyenek.
         </Body>
@@ -48,13 +55,19 @@ export const History = () => {
         </Body>
         <Body>
           – A Tóti-hegy a kedvencem – tettem hozzá. – Csak 346 méter magas, mégis innen látni a
-          legszebb körpanorámát a környéken. A borz halkan hümmögött. – Egyszer felmegyünk együtt…
-          vagy legalábbis te repülsz, én meg lihegek mögötted – mondta, amitől hangosan felnevettem.
+          legszebb körpanorámát a környéken. A borz halkan hümmögött.
+        </Body>
+        <Body>
+          – Egyszer felmegyünk együtt… vagy legalábbis te repülsz, én meg lihegek mögötted – mondta,
+          amitől hangosan felnevettem.
         </Body>
         <Body>
           A vadgesztenyék koronája lassan összezárult felettünk, mintha kicsit jobban őriznék a
-          történetet. – Ha szeretnéd, folytatom a mesémet a következő táblánál is. Kövesd a kék
-          madártollakat, azok mutatják az utat.
+          történetet.
+        </Body>
+        <Body>
+          – Ha szeretnéd, folytatom a mesémet a következő táblánál is. Kövesd a kék madártollakat,
+          azok mutatják az utat.
         </Body>
       </Styled.Article>
     </Styled.Section>
