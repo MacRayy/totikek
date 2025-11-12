@@ -20,6 +20,17 @@ const btnStyles = css({
   background: theme.colors.primary[50],
   color: theme.colors.text.primary,
   textDecoration: 'none',
+  transition: `background-color ${theme.transition.base}, outline-color ${theme.transition.fast}`,
+  '&:hover': {
+    background: theme.colors.primary[100],
+  },
+  '&:active': {
+    background: theme.colors.primary[200],
+  },
+  '&:focus-visible': {
+    outline: `2px solid ${theme.colors.primary[400]}`,
+    outlineOffset: '2px',
+  },
 })
 
 export const Nav = styled.nav(navStyles)
