@@ -1,6 +1,7 @@
 'use client'
 import { H1, H2, Body } from '@/styles/Typography'
 import * as Styled from './Water.styles'
+import * as Nav from '@/ui-components/navigation/Navigation.styles'
 
 export const Water = () => {
   return (
@@ -72,6 +73,10 @@ export const Water = () => {
           menni.
         </Body>
       </Styled.Article>
+      <Nav.Nav>
+        <Nav.Prev href="/kaptalantoti">← Előző: Káptalantóti</Nav.Prev>
+        <Nav.Next href="/madarvilag">Következő: Madárvilág →</Nav.Next>
+      </Nav.Nav>
     </Styled.Section>
   )
 }

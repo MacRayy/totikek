@@ -1,6 +1,7 @@
 'use client'
 import { H1, H2, Body } from '@/styles/Typography'
 import * as Styled from './Wine.styles'
+import * as Nav from '@/ui-components/navigation/Navigation.styles'
 
 export const Wine = () => {
   return (
@@ -53,6 +54,10 @@ export const Wine = () => {
           hagyták ránk.
         </Body>
       </Styled.Article>
+      <Nav.Nav>
+        <Nav.Prev href="/novenyvilag">← Előző: Növényvilág</Nav.Prev>
+        <span />
+      </Nav.Nav>
     </Styled.Section>
   )
 }
