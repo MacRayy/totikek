@@ -18,6 +18,14 @@ const stationsGridStyles = css({
   display: 'grid',
   gridTemplateColumns: '1fr',
   gap: '0.5rem',
+  ['& a']: {
+    color: theme.colors.text.primary,
+    textDecoration: 'none',
+    transition: `text-decoration-color ${theme.transition.fast}`,
+  },
+  ['& a:hover, & a:focus-visible']: {
+    textDecoration: 'underline',
+  },
   ['@media (min-width: 640px)']: {
     gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
   },

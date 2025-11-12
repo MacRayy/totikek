@@ -5,6 +5,7 @@ import { H1, H2, Body } from '@/styles/Typography'
 import { theme } from '@/styles/theme'
 import * as Styled from './Home.styles'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const WarningIcon = () => (
   <svg
@@ -98,22 +99,34 @@ export const Home = () => {
         <H2>A tanösvény állomásai</H2>
         <Styled.StationsGrid>
           <li>
-            <Body>Barangolás Káptalantóti múltjában</Body>
+            <Link href="/kaptalantoti" aria-label="Barangolás Káptalantóti múltjában – oldal">
+              <Body>Barangolás Káptalantóti múltjában</Body>
+            </Link>
           </li>
           <li>
-            <Body>A víz útja Káptalantótiban</Body>
+            <Link href="/viz-utja" aria-label="A víz útja Káptalantótiban – oldal">
+              <Body>A víz útja Káptalantótiban</Body>
+            </Link>
           </li>
           <li>
-            <Body>A Tóti-hegy izgalmas madárvilága</Body>
+            <Link href="/madarvilag" aria-label="A Tóti-hegy izgalmas madárvilága – oldal">
+              <Body>A Tóti-hegy izgalmas madárvilága</Body>
+            </Link>
           </li>
           <li>
-            <Body>Bányászat és felelős tájhasználat</Body>
+            <Link href="/banyaszat" aria-label="Bányászat és felelős tájhasználat – oldal">
+              <Body>Bányászat és felelős tájhasználat</Body>
+            </Link>
           </li>
           <li>
-            <Body>A Tóti-hegy és környékének növényvilága</Body>
+            <Link href="/novenyvilag" aria-label="A Tóti-hegy és környékének növényvilága – oldal">
+              <Body>A Tóti-hegy és környékének növényvilága</Body>
+            </Link>
           </li>
           <li>
-            <Body>Szőlészet és borászat</Body>
+            <Link href="/szolo" aria-label="Szőlészet és borászat – oldal">
+              <Body>Szőlészet és borászat</Body>
+            </Link>
           </li>
         </Styled.StationsGrid>
 
