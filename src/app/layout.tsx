@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { PropsWithChildren } from 'react'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'], // latin-ext for Hungarian characters
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="hu">
       <body suppressHydrationWarning className={inter.className}>
+        <Analytics />
         {children}
       </body>
     </html>
