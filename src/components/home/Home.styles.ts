@@ -7,6 +7,8 @@ const sectionStyles = css({
   display: 'grid',
   gap: '1rem',
   justifyItems: 'center',
+  maxWidth: 900,
+  margin: '0 auto',
 })
 
 const stationsGridStyles = css({

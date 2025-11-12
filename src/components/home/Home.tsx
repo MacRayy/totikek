@@ -120,7 +120,7 @@ export const Home = () => {
         <H2>Megközelítés</H2>
         <Body>
           Autóval: Káptalantótihoz a 77-es főútról Tapolca irányából érkezve, Nemesgulácsnál kell
-          letérni észak felé. Budapest felől az M7-es autópályáról a balatonederici lehajtónál kell
+          letérni észak felé. Budapest felől az M7-es autópályáról a balatonedericsi lehajtónál kell
           lehajtani, majd a 71-es főúton Tapolca felé haladva Nemesgulácsnál észak felé fordulni.
         </Body>
         <Body>
