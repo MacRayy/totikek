@@ -1,6 +1,7 @@
 'use client'
 import { H1, H2, Body } from '@/styles/Typography'
 import * as Styled from './History.styles'
+import * as Nav from '@/ui-components/navigation/Navigation.styles'
 
 export const History = () => {
   return (
@@ -70,6 +71,10 @@ export const History = () => {
           azok mutatják az utat.
         </Body>
       </Styled.Article>
+      <Nav.Nav>
+        <span />
+        <Nav.Next href="/viz-utja">Következő: A víz útja →</Nav.Next>
+      </Nav.Nav>
     </Styled.Section>
   )
 }

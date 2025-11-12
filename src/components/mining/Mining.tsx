@@ -1,6 +1,7 @@
 'use client'
 import { H1, H2, Body } from '@/styles/Typography'
 import * as Styled from './Mining.styles'
+import * as Nav from '@/ui-components/navigation/Navigation.styles'
 
 export const Mining = () => {
   return (
@@ -87,6 +88,10 @@ export const Mining = () => {
           borító erdő.
         </Body>
       </Styled.Article>
+      <Nav.Nav>
+        <Nav.Prev href="/madarvilag">← Előző: Madárvilág</Nav.Prev>
+        <Nav.Next href="/novenyvilag">Következő: Növényvilág →</Nav.Next>
+      </Nav.Nav>
     </Styled.Section>
   )
 }

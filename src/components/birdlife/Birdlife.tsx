@@ -1,6 +1,7 @@
 'use client'
 import { H1, H2, Body } from '@/styles/Typography'
 import * as Styled from './Birdlife.styles'
+import * as Nav from '@/ui-components/navigation/Navigation.styles'
 
 export const Birdlife = () => {
   return (
@@ -89,6 +90,10 @@ export const Birdlife = () => {
           előre vezetve mindenkit a történet folytatásához.
         </Body>
       </Styled.Article>
+      <Nav.Nav>
+        <Nav.Prev href="/viz-utja">← Előző: A víz útja</Nav.Prev>
+        <Nav.Next href="/banyaszat">Következő: Bányászat →</Nav.Next>
+      </Nav.Nav>
     </Styled.Section>
   )
 }

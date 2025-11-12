@@ -1,6 +1,7 @@
 'use client'
 import * as Styled from './Plants.styles'
 import { H1, H2, Body } from '@/styles/Typography'
+import * as Nav from '@/ui-components/navigation/Navigation.styles'
 
 export const Plants = () => {
   return (
@@ -49,6 +50,10 @@ export const Plants = () => {
           következő meséhez.
         </Body>
       </Styled.Article>
+      <Nav.Nav>
+        <Nav.Prev href="/banyaszat">← Előző: Bányászat</Nav.Prev>
+        <Nav.Next href="/szolo">Következő: Szőlészet és borászat →</Nav.Next>
+      </Nav.Nav>
     </Styled.Section>
   )
 }
