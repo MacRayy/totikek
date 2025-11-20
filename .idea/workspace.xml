@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7495e1a0-ca8a-4b8b-acf1-2057b4635626" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.windsurfrules" beforeDir="false" afterPath="$PROJECT_DIR$/.windsurfrules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Typography.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about-us/AboutUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us/AboutUs.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +30,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/add-content",
+    "git-widget-placeholder": "master",
     "javascript.nodejs.core.library.configured.version": "20.19.5",
     "javascript.nodejs.core.library.typings.version": "20.19.24",
     "js.debugger.nextJs.config.created.client": "true",
@@ -111,7 +108,8 @@
       <workItem from="1756711741781" duration="1234000" />
       <workItem from="1757948150408" duration="637000" />
       <workItem from="1758722048158" duration="603000" />
-      <workItem from="1761943963813" duration="4234000" />
+      <workItem from="1761943963813" duration="5427000" />
+      <workItem from="1762352463989" duration="599000" />
     </task>
     <servers />
   </component>

@@ -49,6 +49,19 @@ export const AboutUs = () => {
             anyagok felhasználásával.
           </Styled.Card>
         </Styled.ActivitiesList>
+        <Body>
+          Ha bármi kérdése, észrevétele van a TÓTIKÉK tanösvénnyel kapcsolatban, keresse a 7hegyfalu
+          Környezetfejlesztő Egyesületet emailen a{' '}
+          <a href="mailto:7hegyfalu@gmail.com">7hegyfalu@gmail.com</a> címen vagy a{' '}
+          <a
+            href="https://www.facebook.com/profile.php?id=61558080938183"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebookon
+          </a>
+          .
+        </Body>
       </Styled.Content>
     </Styled.Section>
   )
