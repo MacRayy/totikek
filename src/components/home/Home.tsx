@@ -132,20 +132,20 @@ export const Home = () => {
 
         <H2>Megközelítés</H2>
         <Body>
-          Autóval: Káptalantótihoz a 77-es főútról Tapolca irányából érkezve, Nemesgulácsnál kell
-          letérni észak felé. Budapest felől az M7-es autópályáról a balatonedericsi lehajtónál kell
-          lehajtani, majd a 71-es főúton Tapolca felé haladva Nemesgulácsnál észak felé fordulni.
+          Autóval: Tapolca felől érkezve Gyulakeszi után kell letérni Káptalantóti irányába, Zánka
+          felé. Nemesgulács felől érkezve Nemesgulács után jobbra érdemes fordulni Káptalantóti
+          felé.
         </Body>
         <Body>
-          Tömegközlekedéssel: Vonattal Tapolca vasútállomásra érkezve, onnan helyközi busszal lehet
-          eljutni Káptalantótiba. A buszjáratok a Tapolca-Sümeg vonalon közlekednek, megállva a
-          településen.
+          Tömegközlekedéssel: Vonattal Tapolcára érdemes érkezni, onnan a Tapolca–Zánka helyközi
+          buszjárat halad át Káptalantótin. A menetrendek változhatnak; indulás előtt érdemes
+          ellenőrizni.
         </Body>
         <Body>
           A tanösvény kezdőpontja: A tanösvény több pontról is megközelíthető. A fő kiindulópont a
           település központjában található, ahonnan jól jelzett útvonal vezet. Parkolási lehetőség
           van a templom közelében és a falu több pontján. Az útvonal változatos terepen halad:
-          települési utcákon, mezei utakon, erdei ösvényeken.
+          települési utcákon, mezei utakon, erdei ösvényeken, szőlődűlők között.
         </Body>
 
         <Styled.MapImageWrap>
