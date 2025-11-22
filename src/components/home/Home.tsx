@@ -134,7 +134,8 @@ export const Home = () => {
         <Body>
           Autóval: Tapolca felől érkezve Gyulakeszi után kell letérni Káptalantóti irányába, Zánka
           felé. Nemesgulács felől érkezve Nemesgulács után jobbra érdemes fordulni Káptalantóti
-          felé.
+          felé. Zánka felől érkezve Köveskál után balra kell fordulni a piacnál, hogy elérd
+          Káptalantótit.
         </Body>
         <Body>
           Tömegközlekedéssel: Vonattal Tapolcára érdemes érkezni, onnan a Tapolca–Zánka helyközi
