@@ -1,85 +1,138 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
-import prettier from "eslint-plugin-prettier";
-import importPlugin from "eslint-plugin-import";
 import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
 import jsxA11y from "eslint-plugin-jsx-a11y";
+import nextPlugin from "@next/eslint-plugin-next";
+import prettier from "eslint-plugin-prettier";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-});
-
 const eslintConfig = [
-  // Base configurations using compat for complex extends
-  ...compat.extends(
-    "next/core-web-vitals",
-    "next/typescript",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:import/typescript",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended"
-  ),
+  {
+    ignores: [
+      "dist/*",
+      ".next/**",
+      "node_modules/**",
+      ".yarn/**",
+      "eslint.config.js",
+      "prettier.config.js",
+      "next.config.js",
+      "*.config.js",
+    ],
+  },
 
-  // Main configuration
+  js.configs.recommended,
+
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
-    parser: typescriptParser,
-    parserOptions: {
-      project: "./tsconfig.json",
-      tsconfigRootDir: __dirname,  // Changed from "./" to __dirname
-      sourceType: "module",
-      ecmaFeatures: {
-        jsx: true,
+      parser: typescriptParser,
+      parserOptions: {
+        project: "./tsconfig.json",
+        tsconfigRootDir: __dirname,
+        sourceType: "module",
+        ecmaVersion: "latest",
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
-    },
       globals: {
         __dirname: "readonly",
         console: "readonly",
         process: "readonly",
         Buffer: "readonly",
         global: "readonly",
+        React: "readonly",
+        JSX: "readonly",
       },
     },
-
     plugins: {
       "@typescript-eslint": typescriptEslint,
-      prettier,
-      import: importPlugin,
-      react,
+      react: react,
+      "react-hooks": reactHooks,
       "jsx-a11y": jsxA11y,
+      "@next/next": nextPlugin,
+      prettier: prettier,
     },
-
     settings: {
       react: {
         version: "detect",
       },
-      "import/resolver": {
-        node: {
-          extensions: [".js", ".jsx", ".ts", ".tsx"],
-        },
-        typescript: {
-          alwaysTryTypes: true,
-          project: "./tsconfig.json",
-        },
-      },
     },
-
     rules: {
-      // Prettier
-      "prettier/prettier": "warn",
+      // TypeScript recommended
+      ...typescriptEslint.configs.recommended.rules,
 
-      // TypeScript rules
+      // React recommended - manually extract to avoid circular refs
+      "react/display-name": "error",
+      "react/jsx-key": "error",
+      "react/jsx-no-comment-textnodes": "error",
+      "react/jsx-no-duplicate-props": "error",
+      "react/jsx-no-target-blank": "error",
+      "react/jsx-no-undef": "error",
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "react/no-children-prop": "error",
+      "react/no-danger-with-children": "error",
+      "react/no-deprecated": "error",
+      "react/no-direct-mutation-state": "error",
+      "react/no-find-dom-node": "error",
+      "react/no-is-mounted": "error",
+      "react/no-render-return-value": "error",
+      "react/no-string-refs": "error",
+      "react/no-unescaped-entities": "error",
+      "react/no-unknown-property": "error",
+      "react/no-unsafe": "off",
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/require-render-return": "error",
+
+      // React Hooks
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+
+      // JSX A11y recommended
+      "jsx-a11y/alt-text": "error",
+      "jsx-a11y/anchor-has-content": "error",
+      "jsx-a11y/anchor-is-valid": "warn",
+      "jsx-a11y/aria-activedescendant-has-tabindex": "error",
+      "jsx-a11y/aria-props": "error",
+      "jsx-a11y/aria-proptypes": "error",
+      "jsx-a11y/aria-role": "error",
+      "jsx-a11y/aria-unsupported-elements": "error",
+      "jsx-a11y/click-events-have-key-events": "warn",
+      "jsx-a11y/heading-has-content": "error",
+      "jsx-a11y/html-has-lang": "error",
+      "jsx-a11y/iframe-has-title": "error",
+      "jsx-a11y/img-redundant-alt": "error",
+      "jsx-a11y/interactive-supports-focus": "error",
+      "jsx-a11y/label-has-associated-control": "error",
+      "jsx-a11y/media-has-caption": "error",
+      "jsx-a11y/mouse-events-have-key-events": "error",
+      "jsx-a11y/no-access-key": "error",
+      "jsx-a11y/no-autofocus": "warn",
+      "jsx-a11y/no-distracting-elements": "error",
+      "jsx-a11y/no-interactive-element-to-noninteractive-role": "error",
+      "jsx-a11y/no-noninteractive-element-interactions": "error",
+      "jsx-a11y/no-noninteractive-element-to-interactive-role": "error",
+      "jsx-a11y/no-noninteractive-tabindex": "error",
+      "jsx-a11y/no-redundant-roles": "error",
+      "jsx-a11y/no-static-element-interactions": "warn",
+      "jsx-a11y/role-has-required-aria-props": "error",
+      "jsx-a11y/role-supports-aria-props": "error",
+      "jsx-a11y/scope": "error",
+      "jsx-a11y/tabindex-no-positive": "error",
+
+      // Next.js
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
+
+      // TypeScript custom
       "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -124,13 +177,7 @@ const eslintConfig = [
       "@typescript-eslint/prefer-for-of": "error",
       "@typescript-eslint/prefer-function-type": "error",
 
-      // Import rules
-      "import/no-named-as-default-member": "off",
-      "import/no-extraneous-dependencies": "off",
-      "import/newline-after-import": "error",
-      "import/no-duplicates": "error",
-
-      // React rules
+      // React custom
       "react/boolean-prop-naming": [
         "error",
         { rule: "^(is|has|should|can|are|have)[A-Z]([A-Za-z0-9]?)+" }
@@ -143,30 +190,15 @@ const eslintConfig = [
       "react/jsx-tag-spacing": "error",
       "react/jsx-boolean-value": "error",
       "react/self-closing-comp": "error",
-      "react/react-in-jsx-scope": "off",
 
-      // JSX A11y rules
-      "jsx-a11y/no-static-element-interactions": "warn",
-      "jsx-a11y/click-events-have-key-events": "warn",
-      "jsx-a11y/anchor-is-valid": "warn",
-      "jsx-a11y/no-autofocus": "warn",
+      // Prettier
+      "prettier/prettier": "warn",
 
-      // General rules
+      // General
       "no-empty-function": "off",
       "eol-last": ["error", "always"],
       "curly": ["error", "all"],
     },
-  },
-
-  // Ignore patterns
-  {
-    ignores: [
-      "dist/*",
-      ".next/**",
-      "node_modules/**",
-      ".yarn/**",
-      "eslint.config.js",
-    ],
   },
 ];
 
