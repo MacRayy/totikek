@@ -1,0 +1,40 @@
+# Tótikék Tanösvény - Káptalantóti
+
+> A Tótikék tanösvény egy 6,3 km hosszú kirándulási útvonal Káptalantótiban, Magyarországon. A túra bemutatja a település történelmét, természeti értékeit és kulturális örökségét.
+
+## Alapinformációk
+- Útvonal hossza: 6,3 km
+- Szintemelkedés: 198 m fel és le
+- Időtartam: kb. 3 óra
+- Helyszín: Káptalantóti, Balaton-felvidék, Magyarország
+- Jelzés: kék madártollak
+
+## Az oldal tartalma
+
+### Kezdőlap (/)
+A tanösvény áttekintése, megközelítési információk, térkép és praktikus tanácsok.
+
+### Káptalantóti története (/kaptalantoti)
+A település története 1256-tól napjainkig. A Szent Márton püspök-templom és a Szentháromság-szobor bemutatása.
+
+### A víz útja (/viz-utja)
+A Tóti-hegy vízrendszere, források és patakok története.
+
+### Madárvilág (/madarvilag)
+A Tóti-hegy madárfajai és élőhelyeik bemutatása.
+
+### Bányászat (/banyaszat)
+A térség bányászati múltja és a felelős tájhasználat.
+
+### Növényvilág (/novenyvilag)
+A Tóti-hegy és környékének jellegzetes növényei.
+
+### Szőlészet és borászat (/szolo)
+A térség szőlészeti és borászati hagyományai.
+
+### Rólunk (/about)
+A Tótikék projekt és csapat bemutatása.
+
+## Elérhetőség
+Helyszín: Káptalantóti, Magyarország
+Koordináták: 46.825°N, 17.483°E

@@ -53,6 +53,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    // AI-specific content
+    {
+      url: `${siteUrl}/llms.txt`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.3,
+    },
   ]
 
   return entries
