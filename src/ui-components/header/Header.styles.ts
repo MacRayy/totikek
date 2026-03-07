@@ -81,6 +81,9 @@ export const Menu = styled.ul<{ $isOpen: boolean }>(({ $isOpen }) => ({
   pointerEvents: $isOpen ? 'auto' : 'none',
   transition: 'opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease',
   '& li a': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
     color: theme.colors.text.inverse,
     textDecoration: 'none',
     fontWeight: 500,
