@@ -27,7 +27,7 @@ export const Header = () => {
       </Link>
 
       <Styled.Nav>
-        <Styled.Menu id="site-menu" data-open={isOpen}>
+        <Styled.Menu id="site-menu" $isOpen={isOpen}>
           {items.map(it => (
             <li key={it.path}>
               <Link href={it.path} onClick={() => setIsOpen(false)}>
@@ -44,21 +44,11 @@ export const Header = () => {
         aria-expanded={isOpen}
         onClick={() => setIsOpen(v => !v)}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke={theme.colors.text.inverse}
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="18" x2="21" y2="18" />
-        </svg>
+        <Styled.BurgerIcon $isOpen={isOpen}>
+          <span />
+          <span />
+          <span />
+        </Styled.BurgerIcon>
       </Styled.MenuButton>
     </Styled.Header>
   )
