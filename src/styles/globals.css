@@ -159,22 +159,14 @@ body {
   min-height: 100vh;
 }
 
-/* Custom scrollbar */
+/* Hide scrollbar while keeping scroll functionality */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
 ::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-neutral-100);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-primary-300);
-  border-radius: var(--border-radius-sm);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary-500);
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* Focus styles */
