@@ -89,54 +89,6 @@ const hikingTrailSchema = {
   ],
 }
 
-// FAQ schema for common questions
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Milyen hosszú a Tótikék tanösvény?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A Tótikék tanösvény 6,3 km hosszú, és körülbelül 3 óra alatt teljesíthető kényelmes tempóban. A szintemelkedés 198 m fel és le.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Hogyan lehet megközelíteni a Tótikék tanösvényt?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Autóval Tapolca, Nemesgulács vagy Zánka felől érhető el Káptalantóti. Tömegközlekedéssel vonattal Tapolcáig, onnan a Tapolca–Zánka helyközi buszjárattal. A kiindulópont a település központjában van, parkolási lehetőség a templom közelében.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Hol található a Tótikék tanösvény?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A tanösvény Káptalantótiban található, a Tóti-hegyen, a Balaton-felvidéken. A falu hét hegy ölelésében fekszik: Tóti-hegy, Gulács, Szent György-hegy, Csobánc, Hajagos, Bács és Sabar.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Mit lehet látni a Tótikék tanösvényen?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A tanösvény 6 állomáson keresztül mutatja be a település történelmét, a víz útját, a madárvilágot, a bányászati múltat, a növényvilágot, valamint a szőlészeti és borászati hagyományokat.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Ingyenes a Tótikék tanösvény?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Igen, a Tótikék tanösvény ingyenesen bejárható. A tanösvényt mindenki saját felelősségre járhatja be.',
-      },
-    },
-  ],
-}
-
 // Breadcrumb schema for navigation
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -184,10 +136,6 @@ export function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(hikingTrailSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <script
         type="application/ld+json"
